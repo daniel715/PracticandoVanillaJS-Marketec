@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../my_styles/css/bootstrap.min.css">
+    <script src="../my_styles/js/bootstrap.min.js"></script>
+    <style>
+        @import "filtro_distrito.css";
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>FILTRO GEOGRÁFICO</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form name="fd">
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" class="form-control" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label>Departamento</label>
+                <select class="form-control" name="departamento" onchange="cambiar_provincia()">
+                    <option value="0" selected></option>
+                    <option value="1">Amazonas</option>
+                    <option value="2">Cusco</option>
+                    <option value="3">Lima</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Provincia</label>
+                <select class="form-control" name="provincia" onchange="cambiar_distrito()">
+                    <option value="-"></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Distrito</label>
+                <select class="form-control" name="distrito">
+                    <option value="-"></option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <footer></footer>
+
+    <script src="filtro_distrito.js"></script>
+
+</body>
+
+</html>

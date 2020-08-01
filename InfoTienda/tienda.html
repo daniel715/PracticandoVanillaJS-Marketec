@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../my_styles/css/bootstrap.min.css">
+    <script src="../my_styles/js/bootstrap.min.js"></script>
+    <style>
+        @import "tienda.css";
+    </style>
+
+    <title>TIENDITA</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="contenedor">
+            <img src="data:image/png;base64,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"
+                width="50px">
+            <hgroup>
+                <h1> TIENDASDELIMA </h1>
+                <h6> Haz que todos conozcan tu tienda</h6>
+            </hgroup>
+        </div>
+    </header>
+
+    <div align="center">
+        <h1>INFORMACIÓN GENERAL</h1>
+    </div>
+    &nbsp;
+    <div class="container">
+        <form>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Tienda:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nombre_tienda">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Telefono:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="telefono_tienda">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">¿Cuenta con delivery?</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">Si</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">No</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Dirección:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="direccion_tienda">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Ubigeo:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ubigeo_tienda">
+                </div>
+            </div>
+            <div class="container" align="center">
+                <button type="button" class="btn btn-primary">Siguiente</button>
+            </div>
+            &nbsp;
+        </form>
+    </div>
+    &nbsp;
+
+    <div class="container" align="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.380284093245!2d-77.03624978575716!3d-11.878586342027493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d0c0e79b6351%3A0xfccd2acc81f0c9!2sTrapiche%20Chillon%2C%20Carabayllo!5e0!3m2!1ses!2spe!4v1591894416918!5m2!1ses!2spe"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+
+
+
+</body>
+
+</html>

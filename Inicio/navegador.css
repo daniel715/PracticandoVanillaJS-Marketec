@@ -1,0 +1,46 @@
+/* CSS GENERAL */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav button {
+    width: 110px;
+    height: 2.5rem;
+}
+
+
+/* primer nivel */
+
+
+/* esta propiedad se hace ya que el contenido del ul esta flotado por lo que pierde su altura
+la propiedad table hace que ul tome las dimensiones del contenido*/
+
+nav>ul {
+    display: table;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li :hover {
+    cursor: pointer;
+    background-color: #ddd;
+    transition: 1s;
+}
+
+nav>ul :hover>ul {
+    display: block;
+}
+
+
+/* segundo nivel*/
+
+
+/* hacer desaparecer niveles inferiores*/
+
+nav ul ul {
+    display: none;
+}

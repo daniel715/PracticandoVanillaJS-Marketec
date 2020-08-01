@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import "registrar.css";
+    </style>
+    <link rel="stylesheet" href="../my_styles/css/bootstrap.min.css">
+    <script src="../my_styles/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div id='contenedor'>
+        <header>
+
+            <img src="data:image/png;base64,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"
+                width="50px">
+            <hgroup>
+                <h1> TIENDASDELIMA </h1>
+                <h6> Haz que todos conozcan tu tienda</h6>
+            </hgroup>
+
+        </header>
+
+        <section>
+            <div class="container">
+                <label for="name" class="col-sm-3 col-form-label" id="spanName">
+                    <span class="content-name"  > Nombre </span>
+                </label>
+                <input class="form-control col-sm-4" type='text' required autocomplete="off" name='nombre'>
+            </div>
+
+
+            <div class="container" id='apellidomaterno'>
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                            Apellido Materno
+                    </span>
+                </label>
+                <input class="form-control col-sm-4" type='text' required autocomplete="off" name='apellido materno'>
+
+
+            </div>
+
+
+            <div class="container">
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                            Apellido Paterno
+                    </span>
+                </label>
+                <input class="form-control col-sm-4" type='text' required autocomplete="off" name='apellido paterno'>
+
+
+            </div>
+
+            <div class="container">
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                            Correo Electronico
+                    </span>
+                </label>
+                <input class="form-control col-sm-4" type='text' required autocomplete="off" name='correoelectronico'>
+
+
+            </div>
+
+
+            <div class="container">
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                           Contraseña
+                    </span>
+                </label>
+                <input class="form-control col-sm-4" type='password' required autocomplete="off" name='contraseña'>
+
+
+            </div>
+
+
+            <div class="container">
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                            Confirmar Contraseña
+                    </span>
+                </label>
+                <input class="form-control col-sm-4" type='password' required autocomplete="off" name='confirmarcontraseña'>
+
+
+            </div>
+
+
+            <div class="container">
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                            DNI
+                    </span>
+                </label>
+
+                <input class="form-control col-sm-4" type='text' required autocomplete="off" name='dni'>
+
+            </div>
+
+
+            <div class="container">
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                            Telefono
+                    </span>
+                </label>
+                <input class="form-control col-sm-4" required autocomplete="off" name='telefono'>
+            </div>
+
+
+            <div class="container" class="input">
+                <label for="name" class="col-sm-3 col-form-label">
+                    <span class="content-name">
+                            Direccion
+                    </span>
+                </label>
+                <input class="form-control col-sm-4" type='text' required autocomplete="off" name='direccion' autocomplete="off">
+            </div>
+
+            <input class="btn btn-primary" id="enviar" value="REGISTRAR" type="button" onclick="post()">
+            <input class="btn btn-primary" id='cancelar' value="CANCELAR" type="button">`
+        </section>
+    </div>
+    <script src="registrar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+</html>

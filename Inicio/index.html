@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>TIENDAS ONLINE</title>
+
+</head>
+
+<body>
+    <div id='contenedor'>
+
+        <header>
+            <img src="data:image/png;base64,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"
+                width="50px">
+
+            <hgroup>
+                <h1> TIENDASDELIMA </h1>
+                <h6> Haz que todos conozcan tu tienda </h6>
+            </hgroup>
+
+            <button onclick="funcionmodal()"> 
+                    <h4 > Iniciar Sesion </h4>
+                </button>
+
+
+
+
+            <div id='modal'>
+
+                <div id='modal-content'>
+                    <span class="close" onclick="cerrarmodal()"> &times;</span>
+                    <h2> Iniciar Sesion </h2>
+                    <label for="correo">  Correo Electronico </label>
+                    <input id='correo' type="text">
+                    <label for="password"> Contrasena </label>
+                    <input id="password" type="password">
+                    <input type="button" value="Iniciar Sesion" id="boton1">
+                    <input id='boton2' type="button" onclick="location.href='../RegistroUsuario/registrar.html';" value="Registrar" />
+                </div>
+
+            </div>
+
+        </header>
+
+        <section>
+            <article id='article1'>
+
+                <div>
+                    <span class='articulo1'>QUE NECESITAS?</span>
+                    <input class="articulo1" type='text' placeholder="Busca cualquier producto domestico ">
+                    <button class="articulo1"> BUSCAR </button>
+                </div>
+
+            </article>
+
+            <article id='article2'>
+
+
+
+                <div id='tabBar'>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <button> BEBIDAS </button>
+                                <ul>
+                                    <li> <button id="defecto" onclick="abrir(event,'gaseosa')"> GASEOSA </button></li>
+                                    <li><button onclick="abrir(event,'aguamineral')"> AGUA MINERAL </button></li>
+                                    <li><button onclick="abrir()"> BEBIDAS ALCOHOLICAS </button></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button> CARNES </button>
+                                <ul>
+                                    <li><button onclick="abrir()"> POLLO </button></li>
+                                    <li><button onclick="abrir()"> RES </button></li>
+                                    <li><button onclick="abrir()"> CERDO </button></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button> FRUTAS </button>
+                                <ul>
+                                    <li><button onclick="abrir()"> PLATANO </button></li>
+                                    <li><button onclick="abrir()"> MANZANA </button></li>
+                                    <li><button onclick="abrir()"> MANDARINA </button></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button> VERDURAS </button>
+                                <ul>
+                                    <li><button onclick="abrir()"> PAPA </button></li>
+                                    <li><button onclick="abrir()"> CAMOTE </button></li>
+                                    <li><button onclick="abrir()"> CEBOLLA </button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <div id="gaseosa" class="tabcontent">
+                        <div>
+                            <button>
+                            <h3> MOLITALIA </h3>
+                            <img src='https://plazavea.vteximg.com.br/arquivos/ids/170242-450-450/1104685001.jpg?v=635774864723200000' width="100px" height="100px">                                
+                            </button>
+                        </div>
+
+                        <div>
+                            <button>
+                            <h3> MANCHINI </h3>
+                            <img src='https://ep01.epimg.net/elcomidista/imagenes/2017/09/15/articulo/1505475554_963222_1505476478_sumario_normal.jpg' width="100px" height="100px">
+                                                            
+                        </button>
+                        </div>
+
+                        <div>
+                            <button>
+                            <h3> GRANDMERE </h3>
+                            <img src='https://ep01.epimg.net/elcomidista/imagenes/2017/09/15/articulo/1505475554_963222_1505476375_sumario_normal.jpg'
+                                width="100px" height="100px">
+                                                                
+                            </button>
+                        </div>
+
+                        <div>
+                            <button> 
+                            <h3> SANMARTI </h3>
+                            <img src='https://ep01.epimg.net/elcomidista/imagenes/2017/09/15/articulo/1505475554_963222_1505476199_sumario_normal.jpg'
+                                width="100px" height="100px">
+                            </button>
+                        </div>
+
+                        <div>
+                            <button>
+                            <h3> GENTILE </h3>
+                            <img src='https://ep01.epimg.net/elcomidista/imagenes/2017/09/15/articulo/1505475554_963222_1505476284_sumario_normal.jpg'
+                                width="100px" height="100px">
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                    <div id="aguamineral" class="tabcontent">
+                        <div>
+                            <button> 
+                            <h3> POLLO</h3>
+                            <img src='data:image/jpeg;base64,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'
+                                width="100px" height="100px">
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div id="verduras" class="tabcontent">
+                        <div>
+                            <button>
+                            <h3> PAPAS </h3>
+                            <img src='https://www.ngenespanol.com/wp-content/uploads/2018/08/%C2%BFEn-qu%C3%A9-pa%C3%ADs-de-Europa-la-papa-es-un-ingrediente-esencial.jpg' width="100px" height="100px">
+                        </button>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <article id='article3'>
+                <h1> TIENDAS RECOMENDADAS </h1>
+
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+                <div>
+                    <img src='https://www.monografias.com/docs111/estudio-mercado-tambo-unmsm-fcc/image001.jpg' width="100px" height="100px">
+                    <button> HISTORIA</button>
+                    <button> PRODUCTOS</button>
+                    <button> CONTACTO </button>
+                </div>
+
+
+            </article>
+        </section>
+
+        <footer>
+
+            <h1> CONTACTANOS</h1>
+            <article class="block">
+                <i><img src="https://i.pinimg.com/originals/fe/31/f7/fe31f71c846ba4d22ee9f09ccd5c6d08.jpg" width="100px "> </i>
+                <h3><a href="http://facebook.com/" target="_blank">Facebook</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolorem rerum nostrum, facilis, harum ad tenetur atque similique ex adipisci. Expedita cumque natus id, vel quod similique sunt, perferendis at!
+                </p>
+
+            </article>
+
+            <article class="block">
+                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEVzofv///9wn/tpm/tsnftnmvv1+P/4+v/8/f/B1P2AqfvX4/6Ps/yfvfzk7P7s8v7K2v2ux/y2zP2Wt/zR3/53pPuLsPyDq/vM2/270P3d5/7F1v3b5v7v9P+qxPyiv/waRCI5AAAJ0klEQVR4nO2d6baiOhBGJQMooAiIY6vv/5YXDipTQuaQ3MX3o3u1fY64TVKpVFWSTfB/12bpD2BcK6H/Wgn910rov1ZC/7US+q+V0H+thP5rJfRfK6H/cpEwzJLrrsjzotgdkyxUfDfHCKMkTzcIQ1QLNH9AjKry9m8r/5YuER6Kc80GNmMBBGG6e0q+qzOEz6Ii0fUoL4+I+92y++9nHSG8p3gG7wuJXhnXux3qvoDzzz+cIExiyML7QOKSzRjucfNueNf+0wHCwwXz8bWM+3njGr0+nQHE7QuLE0Z7Ab6WsaC/W5hj9PvJ9qUpYfY4GYIh6cgcflPB+EB+s+cbdXwgbV+cENZfAgSUd9CubYmF+f6aMSe82b0c9AZ0bF8eE56aRwIkO/mI6VCJN+CnGc+jmSPcja0VjMiEVfslVTYAj4IjsC+w6fWz6FROJhuwD4iEO/j5/9Q8YCHVQ38E8GMunscSESYb/P0GRoS/n0T7wLDeUAWwYXgE4SmPya4CuHyfMyR8dKYIkgazRpWqgHUrVBACSkeHCZmwP/K/PoEZ7RH5k2lSz5AMCJPB94oNzosv9RacFf414ZCwHNnbZPLJNGlnGBCcu2f1CcNxz8H/zAD+U7KiHMI9/7xP+JiMDWgEMZSfBvmE+layT1gSZhUTHfVimHDor/QIt6S+g6/aAQvDg/A32WfF6zEgTIhP1j5pZKYHIWxXV0kTNoBx1CMsyFPU3HJMRsb7aONwZgVoPTn06hGeae7BWyfg0fREEQfP26VbB1cd4Zb63SKNbjj9KboIX5eBp9ojfNLHB4j543gMUYaCTsTBd9jvpWRD8/0tTav+yDjgWNuOcDf3cACPWghvlgnxvTdb5PMjBL90EJoehSM1zk1HuGc8HcXqwZuT6cl+qL9lcEeYsqPqyj2VNiEZEgoHhBwzMVYMbTztNmHrVHeEMcf3iyolm2rXznziMB1hxfNb5Fgsr3i+RG1CZTAi5Hw8ooXU2QpN+9x9fRMzYuOw/VX8lsw5Hy12UrD5pqg6Qn47h4DcovFtsZPCXxyjIySs8Om/f5bpqhaHYe3LTAlfIs+vu6qwMx7Zmyv6gdCOUNCUI3QTJDxYIxxEejvCk6gdQOAhRGjN0AxjSx2hxFcMKxFG80vDVqNYfUcotXSDG/5AFcu116RxjLcXp5EzdWhTcNocK243gGMr3yOUna4QfnPNHTYmC1BN6m16hFfpcQLgmcMH0ElCEbpM3a0eoYrbCCB4sRpSHwhNkLS66+ct1LoRgNVttiRLFwdVmDhD9wlVzTlA+DIDybU8UxE5UdYn1OB0AASrnFLvatjS0MpHNvo/Qz0myx1hUBpOWPTzvlTC2ZCp0NMQhmmRDKsIRRYvMs/kIdTq/Te1y1VZnH4D0/DykItQbAXF9VgEMa7S1+10CBkhZ+VHcRFmZhY4oGlPzjJg+YdwEdryjk2Ik9ByzFanuGaLZiRaT3/pEij5CI3naI0JUFIOkyroo82wrU4BSrnBtJKdmYNyVIiSbxj4pacmQxh6amxosb9enKbZSrOvGRM/+ymiRMV6Uf3GigL4zqwFxfQKUsphf4TfYhOAzyfLqVo9gncGYbc4BF424QZSygwIhJ4KUYKaP0LjJYOmBciA03Hoq7oNFjTCyHdCWp1IN1t4TkhzaURrMdwVtZxJoCbKbdGmQ9kst3vCtO3BHeF0t4VXou6YVMoBOyT6hkmeOm8fRDWl/fWhl/72V4i60Y6938IPQWrOq0d48HnORzTAQRRj6U+poJmd2X1Cj2dERN+6pDlDupRmNkoayJAuIUQveTWTIbUtWlZmQrj1lXBmGI5i3rmniNSFxYTQ13g3pgOO8xZ+NiItsUYi9NP9pgX0SYTBw8d+SgsGEwmNb0Q2IGogkUxoqBzDpOZr6qcZ0pt3iHi+JHL6km8r4d8OJ25C4wdzaBZj4wfpzD3PlsL05T2V0K96jHlLSjs3cecR4ux0TyVUPEvNqiBjuwft7MubL4jUrBqL0JuOOrdwmidsz4h0XuwTHmdOaD3QzrNzSYi5s2zuDNro7L4DR6vA4CNsfFTHmxGwzyOZI8yyIDS8hUBV8043gzCLMcbx3un0/mz4gkUYtYctOd6ErKlijtCH6PBcIJhN6EPUjevMQyrh1f2ZgrH0ZRFu3SfkO1+Vbkud3z7DWhgyCY0fo6oqHkM6S+h6NpH3yPEZQseLpDDnATJzXpvTtoa58uUhtH0EoJAg7y1Js2uLpSlmNJf1FSB0ORHFC8hYHzprTgXOi58nvDs6J4pcTsFobUe3lGKBYzhZ/dnJfgpFjqdmEbqYMOV0SDkJXczScARnRAiNX0UhLKE+ynVnV+qWteEKXYgROlaeMVtaIkm4dcmgCh+7zeX9OISIOCKkEoSfbdAOSOIyMV4Pdu+GReVd9koQupEUlrlOhH8Vcl8+wi91VRo/YRDJXVaoT3wRYAXCIDgtu1UfSF3vLEQYbHOFKwtVJWFlxAmDIHwvlRaWvZdJlLC5zpR9ObEBCfrbKoS1ybnF2PaARNIXFskQBs0l4bO3aOsHFHbWVAmD5t5ge1UMSHDFpIcwyKzt4BcLW+gijF7WJg4QS17GoER4Q9ZsjRqgJOFjY8+WKgLKEG53FvnUxqAUYVRYdU5VrKgU4WFvd67XcG2fCOH0/nLTIh5BboowPKbW/VGlq5fECA+3M7LvbmMt9/WxCbPHHiyxmgCAr15GhXB7OOUpsOphd0Kx1IqeRBgV5Wt3Te6HZ9gqOySnx+2dxhAu0DU/gvKLiTFhCBAAqDmNuidUoy1aqa/xit6NzYu0eKVrCLaEDgqWap7oiNC5SnWg+Z7sjfF7wAUFY6EcNgdh4NTGGEC+SUWNMHgsNiVMBC+aG7AlDKL9gpHsngB7m5YkYRDc4+W7KsClJi+GRGg3LkEUjLkq7+UJl026bJCRDjokbOKDSyVdEH89rBJhk1haoh0RfAnf+ClLWDO+oOXxWPMZMTA0wpoxt8hYr2sKs3zEFfB2V9kZkABWD50+NjdhrSQ135AIpobmBx7CIHgWG5MNCSDI9TtoQoS1kj0wAwkgKvlr7Q0S1iPyqj9GChBOryZnh7FY0cTttUT6WrK5OPBo3rgMxBER3iavJmmviNncvVa9Est4AXdU/3ncxxjKUjY36MX7q2BxryYJZGbCU34Ggo35d2vephxf9mhTovnD7JqnFYaseCr4i8FieNnfkmWa7iepLHd0ON1eaVwbjk/4uIkgt3/VTVb35k2cvovjfWG2VgrVJjXp83BPTsfH7lbkeV4Ut93xlNyz0OZkwJQSoRdaCf3XSui/VkL/tRL6r5XQf62E/msl9F8rof9aCf3X/5/wP/oomQP5WVGwAAAAAElFTkSuQmCC" width="100px "> </i>
+                <h3><a href="http://twitter.com/" target="_blank">Twitter</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolorem rerum nostrum, facilis, harum ad tenetur atque similique ex adipisci. Expedita cumque natus id, vel quod similique sunt, perferendis at!
+                </p>
+
+            </article>
+
+
+            <article class="block">
+                <i> <img src="https://icons-for-free.com/iconfiles/png/512/instagram+instagram+new+design+logo+social+media+icon-1320184016084463641.png" width="100px "> </i>
+                <h3><a href="http://instagram.com/" target="_blank">Instagram</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolorem rerum nostrum, facilis, harum ad tenetur atque similique ex adipisci. Expedita cumque natus id, vel quod similique sunt, perferendis at!
+                </p>
+
+            </article>
+        </footer>
+
+        <script src='index.js'></script>
+
+
+    </div>
+
+
+</body>
+
+</html>
